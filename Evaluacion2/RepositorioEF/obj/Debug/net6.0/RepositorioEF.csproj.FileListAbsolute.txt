@@ -1,0 +1,17 @@
+C:\Users\coron\source\repos\Evaluacion2\RepositorioEF\obj\Debug\net6.0\RepositorioEF.csproj.AssemblyReference.cache
+C:\Users\coron\source\repos\Evaluacion2\RepositorioEF\obj\Debug\net6.0\RepositorioEF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\coron\source\repos\Evaluacion2\RepositorioEF\obj\Debug\net6.0\RepositorioEF.AssemblyInfoInputs.cache
+C:\Users\coron\source\repos\Evaluacion2\RepositorioEF\obj\Debug\net6.0\RepositorioEF.AssemblyInfo.cs
+C:\Users\coron\source\repos\Evaluacion2\RepositorioEF\obj\Debug\net6.0\RepositorioEF.csproj.CoreCompileInputs.cache
+C:\Users\coron\source\repos\Evaluacion2\RepositorioEF\bin\Debug\net6.0\RepositorioEF.deps.json
+C:\Users\coron\source\repos\Evaluacion2\RepositorioEF\bin\Debug\net6.0\RepositorioEF.runtimeconfig.json
+C:\Users\coron\source\repos\Evaluacion2\RepositorioEF\bin\Debug\net6.0\RepositorioEF.dll
+C:\Users\coron\source\repos\Evaluacion2\RepositorioEF\bin\Debug\net6.0\RepositorioEF.pdb
+C:\Users\coron\source\repos\Evaluacion2\RepositorioEF\bin\Debug\net6.0\Models.dll
+C:\Users\coron\source\repos\Evaluacion2\RepositorioEF\bin\Debug\net6.0\Models.pdb
+C:\Users\coron\source\repos\Evaluacion2\RepositorioEF\obj\Debug\net6.0\RepositorioEF.csproj.CopyComplete
+C:\Users\coron\source\repos\Evaluacion2\RepositorioEF\obj\Debug\net6.0\RepositorioEF.dll
+C:\Users\coron\source\repos\Evaluacion2\RepositorioEF\obj\Debug\net6.0\refint\RepositorioEF.dll
+C:\Users\coron\source\repos\Evaluacion2\RepositorioEF\obj\Debug\net6.0\RepositorioEF.pdb
+C:\Users\coron\source\repos\Evaluacion2\RepositorioEF\obj\Debug\net6.0\RepositorioEF.genruntimeconfig.cache
+C:\Users\coron\source\repos\Evaluacion2\RepositorioEF\obj\Debug\net6.0\ref\RepositorioEF.dll

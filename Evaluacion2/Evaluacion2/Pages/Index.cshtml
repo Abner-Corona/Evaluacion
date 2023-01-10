@@ -1,0 +1,104 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <table id="clientesTable" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th data-field="id">Id</th>
+                <th data-field="nombre">Nombre</th>
+                <th data-field="direccion">Dirección</th>
+                <th data-field="edad">Edad</th>
+                <th data-field="telefono">Telefono</th>
+                <th data-field="sexo">Sexo</th>
+                <th data-field="cuentaBancaria">CuentaBancaria</th>
+                <th>Opcion</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <table id="comprasTable" class="table table-striped table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Numero Tarjeta</th>
+                                <th>Compra</th>
+                                <th>Monto</th>
+                                <th>TipoTarjeta</th>
+                                <th>TipoProduto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    @section scripts{
+        <script type="text/javascript">
+            function verInfo(clienteId) {
+                $.get(`/Compras/GetByClientId/${clienteId}`).done((compras) => {
+                    $('#comprasTable tbody').empty();
+                    let appendT = "";
+                    compras.forEach((compra) => {
+                        appendT += '<tr>' +
+                            '<td>' + compra.numeroTarjeta +
+                            '</td>' +
+                            '<td>' + compra.compra +
+                            '</td>' +
+                            '<td>' + compra.monto +
+                            '</td>' +
+                            '<td>' + compra.tipoTarjeta +
+                            '</td>' +
+                            '<td>' + compra.tipoProduto +
+                            '</td>' +
+                            '</tr>';
+                    })
+                    $('#comprasTable tbody').append(appendT)
+                    $('#myModal').modal('show');
+                });
+
+            }
+            $(document).ready(function () {
+
+                $.get('/Clientes/GetAll').done((clientes) => {
+                    $('#clientesTable tbody').empty();
+                    let appendT = "";
+                    clientes.forEach((cliente) => {
+                        appendT += '<tr>' +
+                            '<td>' + cliente.id +
+                            '</td>' +
+                            '<td>' + cliente.nombre +
+                            '</td>' +
+                            '<td>' + cliente.direccion +
+                            '</td>' +
+                            '<td>' + cliente.edad +
+                            '</td>' +
+                            '<td>' + cliente.telefono +
+                            '</td>' +
+                            '<td>' + cliente.sexo +
+                            '</td>' +
+                            '<td>' + cliente.cuentaBancaria +
+                            '</td>' +
+                            `<td> <i style="cursor: pointer;"  onclick="verInfo(${cliente.id})" class="fa-solid fa-circle-info"></i> </td>` +
+                            '</tr>';
+                    })
+                    $('#clientesTable tbody').append(appendT)
+                });
+            });
+
+        </script>
+    }
